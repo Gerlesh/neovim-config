@@ -115,14 +115,13 @@ require('lazy').setup({
     },
   },
 
-  {
-    -- Dark charcoal color theme
-    'bluz71/vim-moonfly-colors',
-    priority = 1000,
-    config = function()
-      vim.cmd.colorscheme 'moonfly'
-    end,
-  },
+  -- {
+  --   -- Dark charcoal theme
+  --   "bluz71/vim-moonfly-colors",
+  --   name = "moonfly",
+  --   lazy = false,
+  --   priority = 1000
+  -- },
 
   {
     -- Set lualine as statusline
@@ -131,7 +130,7 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = false,
-        theme = 'moonfly',
+        -- theme = 'moonfly',
         component_separators = '|',
         section_separators = '',
       },
